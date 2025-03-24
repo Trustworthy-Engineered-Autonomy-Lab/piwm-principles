@@ -59,7 +59,6 @@ def train_vae(model, train_loader, optimizer, device,epoch):
         optimizer.zero_grad()
         use1=use1.to(device)
         recon_x, mu, logvar = model(x)
-        # loss1 = vae_loss(recon_x, x, mu[:,4:], logvar[:,4:])
         recon_loss = nn.functional.mse_loss(recon_x, x, reduction='sum')
 
         mu_label_loss = F.mse_loss(mu[:,0:4], use1)
@@ -67,9 +66,7 @@ def train_vae(model, train_loader, optimizer, device,epoch):
         loss.backward()
         optimizer.step()
         total_loss += loss.item()
-        # if batch_idx == 0:
-        #     vutils.save_image(x.cpu(), "./savepure/first_batch_input"+str(epoch)+".png", normalize=True)
-        #     vutils.save_image(recon_x.cpu(), "./savepure/savefirst_batch_recon"+str(epoch)+".png", normalize=True)
+
     return total_loss / len(train_loader.dataset)
 
 
