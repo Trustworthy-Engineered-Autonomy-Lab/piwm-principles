@@ -9,7 +9,7 @@ pip install -r requirements.txt
 ```
 
 
-## Data generation
+<!-- ## Data generation
 
 
 
@@ -18,3 +18,4 @@ python gene_data.py
 ```
 
 Coming soon.
+-->
