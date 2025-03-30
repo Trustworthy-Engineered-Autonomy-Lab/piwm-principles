@@ -1,6 +1,6 @@
-# 4-Principles-PIWM-Four-Principles-for-Physically-Interpretable-World-Models
+# Four Principles for Physically Interpretable World Models
 
-
+This repository contains the source code for this paper: https://arxiv.org/abs/2503.02143
 
 ## Prerequisites
 
