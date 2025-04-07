@@ -28,7 +28,7 @@ This script collects observation-action pairs and organizes them into train, val
 
 ---
 
-## 2. Baseline Training
+## 2. Standard VAE Training
 
 **Train a Variational Autoencoder (VAE)**
 
